@@ -1,0 +1,19 @@
+{
+	 "kr" : {
+	 	"lblTitle" : "근무기록보기"
+	 	,"lblDate" : "근무일"
+	 	,"lblStartTime" : "출근시간"
+	 	,"lblEndTime" : "퇴근시간"
+	 	,"lblWeekDate" : "주간근무"
+	 	,"lblWeekSumTime" : "주간근무시간"
+	 },
+	 "jp" : {
+		"lblTitle" : "通勤記録を見る"
+	 	,"lblDate" : "勤務日"
+	 	,"lblStartTime" : "出勤時間"
+	 	,"lblEndTime" : "退勤時間"
+	 	,"lblWeekDate" : "週間勤務"
+	 	,"lblWeekSumTime" : "週間勤務時間"
+	 }
+
+}

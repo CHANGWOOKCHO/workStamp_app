@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+    <title>근무정보다운로드</title>
+    <script src="../js/core.js/common.js"></script>
+</head>
+
+<body>
+    <div id="app" class="background">
+       <header id="header">
+            <h1 id="logo">
+                <a href="#">
+                    <img src="../img/logo.png" alt="WorkStamp Logo"><p id="lblTitle">근무정보다운로드</p>
+                </a>
+            </h1>
+ 			<!-- Menu -->
+            <nav id="menu"></nav>
+    	</header>
+
+       
+		<main id="main"  style="padding: 70px 20px 20px 20px;">
+			<div id = "groundField">
+				<div id = "top">
+					<div class = "row" style = "padding: 10px 20px 0px 20px;">
+						<div class="col-xs-5" style = "padding: 0; text-align: left; color: #A67C4A">TO</div>
+	                	<div class="col-xs-7" style = "padding: 0; text-align: left; color: #A67C4A">FROM</div> 		
+					</div>
+	            	<div class = "row" style = "padding: 0px 20px 0px 20px;">
+	         		    <div class="col-xs-5" style = "padding: 0">
+	             			<input type="date" id="txtStartWorkYmd" class="form-control">
+	         			</div>
+	     			 	<div class="col-xs-5" style = "padding: 0">
+	         			 	<input type="date" id="txtEndWorkYmd" class="form-control">
+	     			 	</div>            			 		
+	     			 	<div class="col-xs-2" style = "padding: 0">
+	         		     	 <button type="button" id="btnSearch" class="form-control wood material-icons" style="font-size: 15px; align-content: center;">search</button>
+	     			 	 </div>
+	               	</div>
+               	</div>
+               
+               <div id="gridWrap" style ="margin:10px; padding:0px">
+               		<table id="empList"></table>
+               </div>
+               
+			</div>
+        </main>
+        
+        <footer id="footer">
+			<div style="padding: 0px 20px 0px 20px; margin: 0">
+       			<button type="button" id = "btnDownLoad" class="form-control btn wood">다운로드</button>
+       		</div>
+    	</footer>
+        
+    </div>
+	 <div id = "progressBar"></div>
+	 <div id="divModalEmpWorkinfo"></div>
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/downloadWorkInfo.js"></script>
+</body>
+
+</html>

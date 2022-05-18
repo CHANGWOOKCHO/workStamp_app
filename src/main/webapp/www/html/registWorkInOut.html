@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+    <title>출퇴근등록</title>
+    <script src="../js/core.js/common.js"></script>
+</head>
+
+<body>
+     <div id="app" class="background">
+     
+     	<header id="header">
+            <h1 id="logo">
+                <a href="#">
+                    <img src="../img/logo.png" alt="WorkStamp Logo"><p id="lblTitle">출퇴근등록</p>
+                </a>
+            </h1>
+ 			<!-- Menu -->
+            <nav id="menu"></nav>
+    	</header>
+     
+     
+    	<main id="main"  style="padding: 70px 20px 20px 20px;">
+			<div id = "groundField">
+				
+    			<div class="wrap_top_search wood">
+    				<div class ="row">
+    					<div class="col-xs-6">FROM</div>
+    					<div class="col-xs-2 txt_align_r">START</div>
+    					<div id= "txtWorkStartTime" class="col-xs-4 txt_align_c" apprCd="">00 : 00 : 00</div>
+    				</div>
+    				<div class ="row">
+    					<div class="col-xs-6"><input id =  "ipbWorkYmd"  class="wood datePicker"  type="date" style="border: none; margin:0px"></div>
+    					<div class="col-xs-2 txt_align_r">END</div>
+    					<div id = "txtWorkEndTime" class="col-xs-4 txt_align_c" apprCd="">00 : 00 : 00</div>
+    				</div>
+				</div>
+				
+				
+				<div class="row" style="margin: 100px 0px 20px 0px">
+                	<div class="col-xs-6" style="padding: 0px 5px 0px 5px;">
+                    	<input type="radio" name="stampType" value="IN"><button class="bindRadio">GO TO WORK</button>
+                	</div>
+                	<div class="col-xs-6" style="padding: 0px 5px 0px 5px;">
+                    	<input type="radio" name="stampType" value="OUT"><button class="bindRadio">GO TO HOME</button>
+                	</div>
+            	</div>
+            	
+            	<div class="toggleWrap">
+  					<span id="lblOutoSwitch">수기입력</span>
+  					<input type="checkbox" id="toggle_alarm" name="outoSwitch" value="" />
+  					<div>
+    					<label for="toggle_alarm">
+      						<span></span> <!-- 스위치 단추 -->
+    					</label>
+  					</div>
+				</div>
+            	
+				<div class="inputLine-wrap" style="bottom: 40px; display: none;">
+					
+					<div class="inputLine td30p">
+                    	<label id= "lblWorkYmd">근무일</label>
+                    	<input type="date" id="txtRegistYmd" class="form-control">
+                	</div>
+					
+					<div class="inputLine td30p">
+                    	<label id= "lblRegistTime">시간</label>
+                    	<input type="time" id="txtRegistTime" class="form-control" step="1">
+                	</div>
+
+                	<div class="inputLine td30p">
+                    	<label id="lblNonUseAuto">수기입력사유</label>
+                    	<select id = "cbxNonUseAutoCd" class="form-control">
+                      		<option id ="lblOption0" value="0">단순누락</option>
+                      		<option id ="lblOption1" value="1">재택근무</option>
+                      		<option id ="lblOption2" value="2">외근</option>
+                      		<option id ="lblOption3" value="3">기타</option>
+                    	</select>
+            		</div>
+            	</div>
+            	  
+			</div>			
+		</main>
+		
+		<footer id="footer">
+				<div style="padding: 0px 20px 0px 20px;">
+        			<button type="button" id="btnRegist" class="form-control btn wood">등록하기</button>
+        		</div>
+    	</footer>
+		
+		
+    </div>
+	 <div id = "progressBar"></div>
+	
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/registWorkInOut.js"></script>
+</body>
+
+</html>

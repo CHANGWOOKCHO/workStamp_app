@@ -1,0 +1,31 @@
+{
+	 "kr" : {
+	 	"lblUserRegist" : "사용자등록"
+	 	,"lblAdminRegist" : "관리자등록"
+	 	,"lblName" : "성명"
+		,"lblEmpNo" : "사원번호"
+		,"lblCompNm" : "회사명"
+		,"lblTeamNm" : "근무지명"
+		,"lblAddr" : "근무지주소"
+		,"btnUserRegist" : "등록하기"
+		,"btnSearch" : "검색"
+		,"txtZipCd" : "우편번호"
+		,"txtBasicAddr" : "기본주소"
+		,"txtDtailAddr" : "상세주소"
+	 },
+	 "jp" : {
+		"lblUserRegist" : "ユーザー登録"
+		,"lblAdminRegist" : "管理者登録"
+		,"lblName" : "氏名"
+		,"lblEmpNo" : "社員番号"
+		,"lblCompNm" : "会社名"
+		,"lblTeamNm" : "勤務先"
+		,"lblAddr" : "勤務先住所"
+		,"btnUserRegist" : "登録する"	
+		,"btnSearch" : "検索"
+		,"txtZipCd" : "郵便番号"
+		,"txtBasicAddr" : "基本住所"
+		,"txtDtailAddr" : "詳細住所"	
+	 }
+
+}

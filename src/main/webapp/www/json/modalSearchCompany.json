@@ -1,0 +1,19 @@
+{
+	 "kr" : {
+	 	"lblSearch" : "회사명"
+	 	,"btnConfirm" : "확인"
+	 	,"btnClose" : "닫기"
+	 	,"lblCompNm_modal" : "회사명"
+		,"lblAdminNm_modal" : "관리자명"
+		,"lblLocation_modal" : "현재위치"
+	 },
+	 "jp" : {
+		"lblSearch" : "会社名"
+		,"btnConfirm" : "確認"
+		,"btnClose" : "閉じる"
+		,"lblCompNm_modal" : "会社名"
+		,"lblAdminNm_modal" : "管理者名"
+		,"lblLocation_modal" : "現在位置"
+	 }
+
+}

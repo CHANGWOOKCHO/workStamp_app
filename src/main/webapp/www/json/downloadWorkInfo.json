@@ -1,0 +1,11 @@
+{
+	 "kr" : {
+	 	"lblTitle" : "근무정보다운로드"
+	 	,"btnDownLoad" : "다운로드"
+	 },
+	 "jp" : {
+		"lblTitle" : "勤務情報ダウンロード"
+	 	,"btnDownLoad" : "ダウンロード"
+	 }
+
+}

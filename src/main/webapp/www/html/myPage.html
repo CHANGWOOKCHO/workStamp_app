@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover"> 
+    <title>마이페이지</title>
+   	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="../js/core.js/common.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+</head>
+
+<body>
+    <div id="app" class="background">
+    
+    	<header id="header">
+            <h1 id="logo">
+                <a href="#">
+                    <img src="../img/logo.png" alt="WorkStamp Logo"><p id="lblTitle">마이페이지</p>
+                </a>
+            </h1>
+ 			<!-- Menu -->
+            <nav id="menu"></nav>
+    	</header>
+    
+    	<main id="main"  style="padding: 70px 20px 20px 20px;">
+			<div id = "groundField">
+			
+				<form class="form-horizontal">
+
+		          <div class="form-group">
+		              <label id = "lblName" class="col-xs-12 control-label">성명</label>
+		              <div class="col-xs-12">
+		                  <input id = "txtName" type="text" class="form-control readOnly" disabled>
+		              </div>
+		          </div>
+
+		          <div class="form-group">
+		              <label id="lblEmpNo" class="col-xs-12 control-label">사원번호</label>
+		              <div class="col-xs-12">
+		                  <input id = "txtEmpNo" type="text" class="form-control readOnly" disabled>
+		              </div>
+		          </div>
+	
+		          <div class="form-group">
+		              <label id="lblCompNm" class="col-xs-12 control-label">회사명</label>
+		              <div class="col-xs-12">
+		                  <input id= "txtCompNm" type="text" class="form-control readOnly" disabled>
+		              </div>
+		          </div>
+	
+		          <div class="form-group">
+		              <label id="lblTeamNm"  class="col-xs-12 control-label">근무지명</label>
+		              <div class="col-xs-12">
+		                  <input id= "txtTeamNm" type="text" class="form-control readOnly" disabled>
+		              </div>
+		          </div>
+		          
+		          <div class="form-group">
+		              <label id="lblAddr" class="col-xs-12 control-label">근무지주소</label>
+		              
+		              <div class="col-xs-4" style="padding-right: 0px;">
+		              	<input type="number" id="txtZipCd" class="form-control readOnly" disabled>
+		              </div>
+		              <div class="col-xs-8" style="padding-left: 0px;">
+		              	<input type="text" id="txtBasicAddr" class="form-control readOnly" disabled>
+		              </div>
+		              <div class="col-xs-12">
+		                  <input type="text" id="txtDtailAddr" class="form-control readOnly" disabled>
+		              </div>
+		             
+		          </div>
+	
+		          <div id="map"></div>
+		          
+	     	  </form>
+				
+			</div><!-- groundField -->
+		</main>
+		
+		<footer id="footer"  style="height: 20px">
+				<div style="padding: 0px 20px 0px 20px;">
+        			
+        		</div>
+    	</footer>
+		
+    </div><!--app -->
+	
+	<div id = "progressBar"></div>
+	
+    <script type="text/javascript" src="../cordova.js"></script>
+	<script type="text/javascript" src="../js/myPage.js"></script>
+
+</body>
+
+</html>

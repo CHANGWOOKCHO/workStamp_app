@@ -1,0 +1,13 @@
+{
+	 "kr" : {
+	 	"lblKakao" : "카카오톡으로 로그인"
+	 	,"lblFacebook" : "페이스북으로 로그인"
+	 	,"lblLine" : "라인으로 로그인"
+	 },
+	 "jp" : {
+		"lblKakao" : "KAKAOTALKでログイン"
+	 	,"lblFacebook" : "FACEBOOKDでログイン"
+	 	,"lblLine" : "LINEでログイン"	 
+	 }
+
+}

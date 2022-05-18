@@ -1,0 +1,46 @@
+  <!-- Modal -->
+   <div class="modal fade modalSearchAddr" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+           <div class="modal-content">
+
+	            <div class="modal-body">
+            		<div id = "modal_main">
+            		
+            			<div class="inputLine-wrap" style="padding: 0">
+               		    	<div class = "row" style="margin: 0">
+               		     		<div class="inputLine td30p col-xs-10" style = "padding: 0">
+                   		     		<label id="lblSearch">검색</label>
+                   			 		<input type="text" id="txtAddr" class="form-control">
+               			 		</div>
+               			 		<div class="col-xs-2" style = "padding: 0">
+                   		     	    <button type="button" id="btnSearchAddr" class="form-control wood material-icons" style="font-size: 15px; align-content: center;">search</button>
+               			 	    </div>
+               			 	</div>
+            		 	</div>
+            		 
+            			 <div class="grid-wrapper" style="margin-top: 40px;">
+                   			<table id="addrTable"></table>
+               		 	 </div>
+               		 	 
+                    </div>
+                    
+                    <div class= "tablePaging row">
+                    	<div id ="prev" class="col-xs-4"><label>&#60;</label></div>
+                    	<div class = "col-xs-4"><label id="nowPage">1</label>/<label id="totalPage">1</label></div>
+                    	<div id ="next" class= "col-xs-4"><label>&#62;</label></div>
+                    </div>
+                    
+            	</div>
+				    
+	            <div class="modal-footer">
+	                <button type="button" id= "btnClose" class="btn btn-default" data-dismiss="modal">닫기</button>
+	                <button type="button" id= "btnConfirm" class="btn wood">확인</button>
+	            </div>
+
+            </div>
+    	</div>
+	</div>
+	
+	<script type="text/javascript" src="../js/modalSearchAddr.js"></script>
+	
+	

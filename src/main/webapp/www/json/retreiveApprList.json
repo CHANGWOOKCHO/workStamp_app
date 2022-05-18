@@ -1,0 +1,35 @@
+{
+	 "kr" : {
+	 	"lblTitle" : "승인요청목록"
+	 	,"lblWorkYmd" : "근무일"
+	 	,"apprOption0" : "요청"
+	 	,"apprOption1" : "승인"
+	 	,"apprOption2" : "반려"
+	 	,"lblWorkStamp" : "등록구분"
+	 	,"lblWorkTime" : "시간"
+	 	,"lblNonUseAuto" : "수기입력사유"
+		,"lblOption0" : "단순누락"
+		,"lblOption1" : "자택근무"
+		,"lblOption2" : "외근"
+		,"lblOption3" : "기타"
+		,"btnRegist_A" : "승인하기"
+		,"btnRegist_T" : "반려하기"	
+	 },
+	 "jp" : {
+		"lblTitle" : "承認要請リスト"
+		 ,"lblWorkYmd" : "勤務日"
+		,"apprOption0" : "要請"
+	 	,"apprOption1" : "承認"
+	 	,"apprOption2" : "返戻"
+	 	,"lblWorkStamp" : "登録区分"
+		,"lblWorkTime" : "時間"
+		,"lblNonUseAuto" : "手記入力事由"
+		,"lblOption0" : "登録忘れ"
+		,"lblOption1" : "在宅勤務"
+		,"lblOption2" : "外勤"
+		,"lblOption3" : "その他"
+		,"btnRegist_A" : "承認する"
+		,"btnRegist_T" : "返戻する"	
+	 }
+
+}

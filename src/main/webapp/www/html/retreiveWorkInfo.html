@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+    <title>근무기록보기</title>
+    <script src="../js/core.js/common.js"></script>
+</head>
+
+<body>
+    <div id="app" class="background">
+       <header id="header">
+            <h1 id="logo">
+                <a href="#">
+                    <img src="../img/logo.png" alt="WorkStamp Logo"><p id="lblTitle">근무기록보기</p>
+                </a>
+            </h1>
+ 			<!-- Menu -->
+            <nav id="menu"></nav>
+    	</header>
+
+       
+		<main id="main"  style="padding: 70px 20px 20px 20px;">
+			<div id = "groundField">
+			
+				<div class="content-top">
+	                <table id="calendar">
+	                    <thead>
+	                        <tr class="btn-wrap">
+	                            <td><label id="prev">&#60;</label></td>
+	                            <td align="center" id="current-year-month" colspan="5"></td>
+	                            <td><label id="next">&#62;</label></td>
+	                        </tr>        
+	
+	                        <tr id="calendarHeader">
+	                            <td align="center" class="sun">Sun</td>
+	                            <td align="center">Mon</td>
+	                            <td align="center">Tue</td>
+	                            <td align="center">Wed</td>
+	                            <td align="center">Thu</td>
+	                            <td align="center">Fri</td>
+	                            <td align="center" class="sat">Sat</td>
+	                        </tr>
+	                        
+	                    </thead>
+	                    <tbody id="calendar-body"></tbody>
+	                </table>
+				</div>
+				
+				
+				<div class="content-bottom">
+                        <div class="inputLine-wrap" style="display: block; bottom:10px">
+
+                            <div class="inputLine td30p">
+                                <label id="lblDate">근무일</label>
+                                <input type="date" id="txtDate" class="form-control readOnly" disabled>
+                            </div>
+
+                            <div class="inputLine td30p">
+                                <label  id="lblStartTime">출근시간</label>
+                                <input type="time" id="txtStartTime" class="form-control readOnly" step="1" disabled>
+                            </div>
+
+                            <div class="inputLine td30p">
+                                <label  id="lblEndTime">퇴근시간</label>
+                                <input type="time" id="txtEndTime" class="form-control readOnly" step="1" disabled>
+                            </div>
+
+                            <div class="inputLine td30p">
+                                <label id="lblWeekDate">주간근무</label>
+                                <input type="text" id="txtWeekDate" class="form-control readOnly" disabled>
+                            </div>
+
+                            <div class="inputLine td30p">
+                                <label id="lblWeekSumTime">주간근무시간</label>
+                                <input type="text" id="txtWeekSumTime" class="form-control readOnly" disabled>
+                            </div>
+                            
+                        </div>
+                    </div>
+			
+			
+			
+			</div>
+        </main>
+
+    </div>
+	 <div id = "progressBar"></div>
+	 
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/core.js/workStamp.js"></script>
+    <script type="text/javascript" src="../js/retreiveWorkInfo.js"></script>
+
+</body>
+
+</html>

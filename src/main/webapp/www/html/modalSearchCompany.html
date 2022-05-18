@@ -1,0 +1,54 @@
+  <!-- Modal -->
+   <div class="modal fade modalSearchCompany" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+           <div class="modal-content">
+
+	            <div class="modal-body">
+	            	<div id = "modal_main">
+	            		 <div class="inputLine-wrap" style="padding: 0; position: relative;">
+                		     <div class = "row" style="margin: 0">
+                		     	<div class="inputLine td30p col-xs-10" style = "padding: 0">
+                    		     	<label id = "lblSearch">회사명</label>
+                    			 	<input type="text" id="txtSearch" class="form-control">
+                			 	</div>
+                			 	<div class="col-xs-2" style = "padding: 0">
+                    		     	 <button type="button" id="btnSearchCompany" class="form-control btn wood material-icons" style="font-size: 15px;">search</button>
+                			 	</div>
+                			 </div>
+	            		 </div>
+	            		 
+						<div class  = "row" style="border-bottom: 1px #A67C4A solid;">
+							<div class = "col-xs-4">
+								<input type="radio" name="searchType" class="radioGroup" value="1" checked>
+								<label id="lblCompNm_modal">회사명</label>
+							</div>
+							<div class = "col-xs-4">
+								<input type="radio" name="searchType" class="radioGroup" value="2">
+								<label id="lblAdminNm_modal">관리자명</label>
+							</div>
+							<div class = "col-xs-4">
+								<input type="radio" name="searchType" class="radioGroup" value="3">
+								<label id="lblLocation_modal">현재위치</label>
+							</div>
+						</div>
+						
+	            		 <div class="grid-wrapper" >
+                    		<table id="companyTable" >
+                    		</table>
+                		</div>
+                			                
+	                </div>
+	            </div>
+				    
+	            <div class="modal-footer">
+	                <button type="button"  id= "btnClose" class="btn btn-default" data-dismiss="modal">닫기</button>
+	                <button type="button" id= "btnConfirm" class="btn wood">확인</button>
+	            </div>
+
+            </div>
+    	</div>
+	</div>
+	
+	<script type="text/javascript" src="../js/modalSearchCompany.js"></script>
+	
+	

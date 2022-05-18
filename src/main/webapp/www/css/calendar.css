@@ -1,0 +1,135 @@
+@CHARSET "UTF-8";
+
+.content-bottom{
+  
+  float: left;
+  width: 100%;
+}
+
+.main-day{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main-date{
+  font-size: 120px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.todo-wrap{
+  padding: 0 0 0 40px;
+}
+.todo-title{
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+}
+.input-box{
+  width: 50%;
+  margin-right: 20px;
+  height: auto; 
+  background: #0b0809;
+  color: #ddaf35;
+  line-height : normal;
+  padding: .8em .5em 0 0; 
+  font-family: inherit;
+  border: 0; 
+  border-bottom: 1px dashed #ddaf35;; 
+  border-radius: 0; 
+  outline-style: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none;
+}
+.input-data{
+  cursor: pointer;
+  font-size: 10px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  background: #ddaf35;
+  border: none;
+  color: #0b0809;
+  border-radius: 10px;
+}
+.input-data:hover{
+  background: #ffffff;
+  color: #0b0809;
+}
+.input-list > div{
+  font-size: 10px;
+  width: 60%;
+  float: left;
+  color: #ddaf35;
+}
+.input-list > .checked{
+  color: #FFFFFF;
+  text-decoration:line-through
+}
+.del-data{
+  display: block;
+  color: #ddaf35;
+  float: left;
+  width: 10%;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 10px;
+  background: #0b0809;
+  border: none;
+  border-radius: 10px;
+}
+.content-top{
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.sun{
+  color:#ef3333;
+}
+.sat{
+  color:#2107e0;
+}
+.content-top table tr td{
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.active{
+  border-radius: 50%;
+  background-color : #A67C4A;
+  color : #fff;
+}
+
+.activeWeek{
+	border : 1px solid #A67C4A;
+}
+
+#calendar{
+	width : 100%;
+	background-color : white;
+	border : 1px solid #ddd;
+}
+
+#calendarHeader{
+	background-color : #A67C4A;
+	color : #fff; 
+}
+
+.content-top table tr .PrevDate{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.3;	
+}
+
+.content-top table tr .NextDate{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.3;	
+}

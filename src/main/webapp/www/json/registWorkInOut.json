@@ -1,0 +1,28 @@
+{
+	 "kr" : {
+	 	"lblTitle" : "출퇴근등록"
+	 	,"btnRegist" : "등록하기"
+	 	,"lblOutoSwitch" : "수기입력"
+	 	,"lblWorkYmd" : "근무일"
+		,"lblRegistTime" : "시간"
+		,"lblLocation_modal" : "현재위치"
+		,"lblOption0" : "단순누락"
+		,"lblOption1" : "자택근무"
+		,"lblOption2" : "외근"
+		,"lblOption3" : "기타"
+		,"lblNonUseAuto" : "수기입력사유"
+	 },
+	 "jp" : {
+		"lblTitle" : "通勤登録"
+	 	,"btnRegist" : "登録する"
+	 	,"lblOutoSwitch" : "手記入力"
+	 	,"lblWorkYmd" : "勤務日"
+		,"lblRegistTime" : "時間"
+		,"lblOption0" : "登録忘れ"
+		,"lblOption1" : "在宅勤務"
+		,"lblOption2" : "外勤"
+		,"lblOption3" : "その他"
+		,"lblNonUseAuto" : "手記入力事由"
+	 }
+
+}

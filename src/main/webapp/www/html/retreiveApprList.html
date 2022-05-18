@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+    <title>승인요청목록</title>
+    <script src="../js/core.js/common.js"></script>
+</head>
+
+<body>
+    <div id="app" class="background">
+       <header id="header">
+            <h1 id="logo">
+                <a href="#">
+                    <img src="../img/logo.png" alt="WorkStamp Logo"><p id="lblTitle">승인요청목록</p>
+                </a>
+            </h1>
+ 			<!-- Menu -->
+            <nav id="menu"></nav>
+    	</header>
+
+       
+		<main id="main"  style="padding: 70px 20px 20px 20px;">
+			<div id = "groundField">
+			
+				<div id = "top" style = "margin-bottom : 5px">
+					<div class = "row" style = "padding: 10px 20px 0px 20px;">
+						<div class="col-xs-5" style = "padding: 0; text-align: left; color: #A67C4A">TO</div>
+	                	<div class="col-xs-7" style = "padding: 0; text-align: left; color: #A67C4A">FROM</div>
+					</div>
+	            	<div class = "row" style = "padding: 0px 20px 0px 20px;">
+	         		    <div class="col-xs-5" style = "padding: 0">
+	             			<input type="date" id="txtStartWorkYmd" class="form-control">
+	         			</div>
+	     			 	<div class="col-xs-5" style = "padding: 0">
+	         			 	<input type="date" id="txtEndWorkYmd" class="form-control">
+	     			 	</div>            	 		
+	     			 	<div class="col-xs-2" style = "padding: 0">
+	         		     	 <button type="button" id="btnSearch" class="form-control wood material-icons" style="font-size: 15px; align-content: center;">search</button>
+	     			 	 </div>
+	               	</div>
+	               	<div class = "row" style = "padding: 0px 20px 0px 20px;">
+						<div class = "col-xs-4">
+							<input type="radio" name="searchType" class="radioGroup" value="R" checked>
+							<label id="apprOption0">요청</label>
+						</div>
+						<div class = "col-xs-4">
+							<input type="radio" name="searchType" class="radioGroup" value="A">
+							<label id="apprOption1">승인</label>
+						</div>
+						<div class = "col-xs-4">
+							<input type="radio" name="searchType" class="radioGroup" value="T">
+							<label id="apprOption2">반려</label>
+						</div>
+					</div>
+	               
+               	</div>
+               
+                <div id="gridWrap" style ="margin: 0px 10px 0px 10px; padding:0px">
+               		<table id="apprTable"></table>
+                </div>
+                
+				<div id="divRegist" class="inputLine-wrap" style="bottom: 40px;">
+					 
+                       <div class="inputLine td30p">
+                            <label id="lblWorkStamp">등록구분</label>
+                            <input type="text" id="txtWorkStamp" class="form-control readOnly" disabled>
+                      </div>
+                      <div class="inputLine td30p">
+                           <label id="lblWorkYmd">근무일</label>
+                           <input type="date" id="txtWorkYmd" class="form-control readOnly" step="1" disabled>
+                       </div>
+                       <div class="inputLine td30p">
+                           <label id="lblWorkTime">시간</label>
+                           <input type="time" id="txtWorkTime" class="form-control readOnly" step="1" disabled>
+                       </div>
+                       
+                       <div class="inputLine td30p">
+                    	    <label id="lblNonUseAuto">수기입력사유</label>
+                    		<select id = "cbxNonUseAutoCd" class="form-control readOnly" disabled>
+                    		    <option value=""></option>
+                      			<option id="lblOption0" value="0">단순누락</option>
+                      			<option id="lblOption1" value="1">재택근무</option>
+                      			<option id="lblOption2" value="2">외근</option>
+                      			<option id="lblOption3" value="3">기타</option>
+                    		</select>
+            			</div>
+                       
+            	</div>
+            	
+			</div>
+        </main>
+        
+        <footer id="footer">
+			<div class="row" style="padding: 0px 20px 0px 20px; margin: 0">
+       			<button type="button" id = "btnRegist_A" class="btnApprRegist btn wood col-xs-6" data-target='A'>승인하기</button>
+       			<button type="button" id = "btnRegist_T" class="btnApprRegist btn wood col-xs-6" data-target='T'>반려하기</button>
+       		</div>
+    	</footer>
+        
+    </div>
+	 <div id = "progressBar"></div>
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/core.js/workStamp.js"></script>
+    <script type="text/javascript" src="../js/retreiveApprList.js"></script>
+</body>
+
+</html>

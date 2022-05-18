@@ -1,0 +1,47 @@
+<a id="menuBtn" href="#menu"><span class="material-icons">menu</span>
+       
+        		<div id="sidemenu">
+          			<div id="sidemenuWrap">
+          				<img src="../img/navigator.jpg" id="navigatorImg">
+          			
+            			<ul>
+			                <li><a id = "menu0" href="registWorkInOut.html">출퇴근등록</a></li>
+			                <li><a id = "menu1"  href="retreiveWorkInfo.html">출퇴근기록조회</a></li>
+			                <li class="adminPage" style="display: none;"><a id = "menu2"  href="downloadWorkInfo.html">근무정보다운로드</a></li>
+			                <li class="adminPage"  style="display: none;"><a id = "menu3"  href="retreiveApprList.html">승인요청목록</a></li>
+			                <li><a id = "menu4"  href="myPage.html">마이페이지</a></li>
+			                <li><a id="menu5">로그아웃</a></li>
+                		</ul>
+    				</div>
+    			</div>
+    			
+    			<script>
+    			
+    			_e.setUIText("navigator");
+    			
+				$("#sidemenu").height($("html").height());
+					
+				$("#menuBtn").on("click", function() {
+					
+					if($(".modal-backdrop").length > 0){
+						return;	
+					}
+					
+				    $("#sidemenu").css({ display: "block" });
+				    $("#menuBtn").addClass("activeMenu");
+				});
+				
+				$("#sidemenu").on("click", function(e) {
+				    if (e.target !== this && e.target !== $('#closeBtn')[0]) {
+				        return;
+				    }
+				
+				    $("#sidemenu").css({ display: "none" });
+				    $("#menuBtn").removeClass("activeMenu");
+				});
+				
+				$("#menu5").on("click", ()=>{
+					_e.sns.logout();
+				});
+				
+    			</script>

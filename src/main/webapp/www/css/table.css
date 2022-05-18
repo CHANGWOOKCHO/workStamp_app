@@ -1,0 +1,52 @@
+.grid-wrapper{
+	width:100%;
+	height : 150px;
+}
+
+.grid-wrapper table{
+	width : 100%;
+	heigth :100%;
+	margin :0px;
+	padding:0px;
+}
+
+.grid-wrapper table tr{
+	border : 1px #888888 solid;
+	margin-bottom: 5px;
+	font-size: 0.8em;
+	font-weight: bold;
+	background-color : #fff;
+}
+
+.grid-wrapper table tr td .th{
+	padding-right: 0px;
+	
+}
+
+.grid-wrapper table tr td .td{
+	padding-left: 0px;
+}
+.tag{
+	background-color: #A67C4A;
+	color : #fff;
+}
+
+.activeRow{
+	background-color: rgba(166, 124, 74, 0.5) !important;
+	color : #fff;
+}
+
+.tablePaging{
+	position: absolute;
+    width: 95%;
+    height: 25px;
+    bottom: 0px;
+    box-sizing: content-box;
+    background-color : whitesmoke;
+    z-index: 1000;
+    text-align: center;
+	color: #A67C4A;
+}
+
+
+

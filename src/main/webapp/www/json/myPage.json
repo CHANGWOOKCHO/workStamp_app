@@ -1,0 +1,19 @@
+{
+	 "kr" : {
+	 	"lblTitle" : "마이페이지"
+	 	,"lblName" : "성명"
+		,"lblEmpNo" : "사원번호"
+		,"lblCompNm" : "회사명"
+		,"lblTeamNm" : "근무지명"
+		,"lblAddr" : "근무지주소"
+	 },
+	 "jp" : {
+		"lblTitle" : "マイページ"
+		,"lblName" : "氏名"
+		,"lblEmpNo" : "社員番号"
+		,"lblCompNm" : "会社名"
+		,"lblTeamNm" : "勤務先"
+		,"lblAddr" : "勤務先住所"
+	 }
+
+}

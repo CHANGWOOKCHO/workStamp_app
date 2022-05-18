@@ -1,0 +1,15 @@
+{
+	 "kr" : {
+	 	"lblSearch" : "검색"
+	 	,"btnConfirm" : "확인"
+	 	,"btnClose" : "닫기"
+	 	,"txtAddr" : "서울시청or세종대로110"
+	 },
+	 "jp" : {
+		"lblSearch" : "キーワード"
+		,"btnConfirm" : "確認"
+		,"btnClose" : "閉じる"
+		,"txtAddr" : "西新宿二丁目"
+	 }
+
+}
