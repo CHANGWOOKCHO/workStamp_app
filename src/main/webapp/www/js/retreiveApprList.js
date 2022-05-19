@@ -91,33 +91,6 @@
 
 	});
 	
-/*	$("#cbxApprCd").on("change", function(e){
-		
-		var apprCd = $("#cbxApprCd").val();
-		
-		if(apprCd == 'R'){
-			
-			$("#btnRegist_A").removeClass('col-xs-12');
-			$("#btnRegist_T").removeClass('col-xs-12');
-			$("#btnRegist_A").addClass('col-xs-6');
-			$("#btnRegist_T").addClass('col-xs-6');
-			
-			$("#btnRegist_A").show();
-			$("#btnRegist_T").show();
-		}else if(apprCd == 'A'){
-			$("#btnRegist_A").hide();
-			$("#btnRegist_T").hide();
-		}else if(apprCd == 'T'){
-			
-			$("#btnRegist_A").removeClass('col-xs-6');
-			$("#btnRegist_A").addClass('col-xs-12');
-	
-			$("#btnRegist_A").show();
-			$("#btnRegist_T").hide();
-		}
-		
-	});*/
-	
 	$(".btnApprRegist").on("click",async function(e){
 		
 		try{

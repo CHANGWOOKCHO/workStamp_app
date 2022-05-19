@@ -59,10 +59,9 @@ _e.sendCmd = function(cmd, comm, loop){
 		reqData.commData = comm;
 		reqData.loopData = loop;
 		
-		//var url = "localhost:8081/workStamp/"+ cmd;
-		var url = "/workStamp/"+ cmd;
-		//var url = "http://54.180.105.65:8080/"+cmd;
-
+		
+		var url = "/"+ cmd;
+		
 		$.ajax({
 			type : 'post',
 			dataType: 'json',
@@ -441,7 +440,7 @@ _e.sns = {
 									
 	    		} break;
     			case "LINE" : {
-					lineLogin.initialize({ channel_id: "1655629253" });//어플아이디
+					lineLogin.initialize({ channel_id: config.LINE_API });//어플아이디
 					lineLogin.login(
         				function(data) {
 							result.snsId = data.userID;
